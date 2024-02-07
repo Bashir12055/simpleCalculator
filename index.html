@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple calculator</title>
+    <link rel="stylesheet" href="./calc.css" title="" type="" />
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="fflex">
+                <input class="display" type="text" id="result" disabled />
+                <input type="button" value="C" class="btn red" onclick="clearScreen()" />
+            </div>
+            
+            <div class="flex">
+                <input type="button" value="7" class="btn" onclick="display('7')" />
+                <input type="button" value="8" class="btn" onclick="display('8')" />
+                <input type="button" value="9" class="btn" onclick="display('9')" />
+                <input type="button" value="÷" class="btn" onclick="display('/')" />
+            </div>
+            
+            <div class="flex">
+                <input type="button" value="4" class="btn" onclick="display('4')" />
+                <input type="button" value="5" class="btn" onclick="display('5')" />
+                <input type="button" value="6" class="btn" onclick="display('6')" />
+                <input type="button" value="×" class="btn" onclick="display('*')" />
+            </div>
+            
+            <div class="flex">
+                <input type="button" value="1" class="btn" onclick="display('1')" />
+                <input type="button" value="2" class="btn" onclick="display('2')" />
+                <input type="button" value="3" class="btn" onclick="display('3')" />
+                <input type="button" value="-" class="btn" onclick="display('-')" />
+
+            </div>
+            
+            <div class="flex">
+                <input type="button" value="0" class="btn" onclick="display('0')" />
+                <input type="button" value="." class="btn" onclick="display('.')" />
+                <input type="button" value="=" class="btn" onclick="calculate()" />
+                <input type="button" value="+" class="btn red" onclick="display('+')" />
+            </div>
+        </div>
+    </div>
+    
+<script src="./calc.js" type="text/javascript" charset="utf-8">
+    
+</script>
+</body>
+</html>
